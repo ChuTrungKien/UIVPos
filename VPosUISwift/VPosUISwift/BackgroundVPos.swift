@@ -90,8 +90,36 @@ struct NhomDangKy: View {
     }
 }
 
+struct FormV: View {
+    var body: some View {
+        if #available(iOS 16.0, *) {
+            NavigationStack {
+                Form {
+                    Section {
+                        Text("Wua man buing Yang")
+                    }
+                }
+                .navigationTitle("Title Swift")
+                .navigationBarTitleDisplayMode(.inline)
+            }
+        } else {
+            // Fallback on earlier versions
+        }
+        Form {
+            Section {
+                Text("Hello team 1")
+            }
+            
+            Section {
+                Text("ChaoXin")
+                Text("BuingYang")
+            }
+        }
+    }
+}
+
 #Preview {
-    NhomDangKy()
+    FormV()
 }
 
 extension UIScreen {
