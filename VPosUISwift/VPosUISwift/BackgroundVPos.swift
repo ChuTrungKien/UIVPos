@@ -118,8 +118,81 @@ struct FormV: View {
     }
 }
 
+struct ViewALoop: View {
+    let students = ["John", "Smith", "QuynCy", "LongJump"]
+    @State private var selectedStudent = "John"
+    
+    var body: some View {
+        NavigationStack {
+            Form {
+                Picker("Select your student", selection: $selectedStudent) {
+                    ForEach(students, id: \.self) {
+                        Text($0)
+                    }
+                }
+            }
+            .navigationTitle("Select a student")
+        }
+    }
+}
+
+struct ReadingTextField: View {
+    @State private var checkAmount: Double = 0
+    @State private var numberOfPeople = 2
+    @State private var tipPercentage = 20
+    
+    let locale = Locale.current.identifier
+    let tipPercentages = [10, 15, 20, 25, 0]
+    let listNumbers = {
+        var result = [Int]()
+        for i in 2...10 {
+            result.append(i)
+        }
+        return result
+    }()
+    
+    var totalPer: Double {
+        let peopleCount = Double(numberOfPeople)
+        let tipSelect = Double(tipPercentage)
+        let tipValue = checkAmount*tipSelect/100
+        let grandTotal = checkAmount + tipValue
+        let amountPer = grandTotal/peopleCount
+        return amountPer
+    }
+    
+    var body: some View {
+        NavigationStack {
+            Form {
+                Section {
+                    TextField("Amount", value: $checkAmount, format: .currency(code: locale))
+                        .keyboardType(.decimalPad)
+                    Picker("Number of people", selection: $numberOfPeople) {
+                        ForEach(listNumbers, id: \.self) {
+                            Text("\($0) people")
+                        }
+                    }
+                }
+                
+                Section("HOW MUCH DO YOU WANT TO TIP?") {
+                    Picker("Tip", selection: $tipPercentage) {
+                        ForEach(tipPercentages, id: \.self) {
+                            Text($0, format: .percent)
+                        }
+                    }
+                    .pickerStyle(.segmented)
+                }
+                
+                Section {
+                    Text(totalPer, format: .currency(code: locale))
+                }
+            }
+            .navigationTitle("WeSplit")
+        }
+    }
+}
+
 #Preview {
-    FormV()
+    ReadingTextField()
 }
 
 extension UIScreen {
