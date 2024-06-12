@@ -10,15 +10,7 @@ import SwiftUI
 
 struct DangNhapVPosVC: View {
     var body: some View {
-        VStack {
-            MyHeaderView()
-            Spacer()
-            VStack {
-                
-            }
-            .padding(.top, 100)
-        }
-        .navigationBarTitleDisplayMode(/*@START_MENU_TOKEN@*/.automatic/*@END_MENU_TOKEN@*/)
+        MyHeaderView()
     }
 }
 
@@ -63,4 +55,5 @@ struct MyHeaderView: View {
         .background(Color.blue)
     }
 }
+
 
