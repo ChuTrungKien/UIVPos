@@ -12,7 +12,7 @@ struct SafeAreaInsetsModifier: ViewModifier {
     let action: (EdgeInsets) -> Void
     func body(content: Content) -> some View {
         GeometryReader { geometry in
-            Color.clear
+            Color.blue
                 .onAppear {
                     action(geometry.safeAreaInsets)
                 }

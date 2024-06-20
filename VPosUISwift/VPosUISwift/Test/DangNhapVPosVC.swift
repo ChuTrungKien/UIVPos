@@ -26,6 +26,8 @@ struct DangNhapVPosVC: View {
 }
 
 struct MyHeaderView: View {
+    @State private var safeAreaInsets: EdgeInsets = EdgeInsets()
+    
     var body: some View {
         VStack(spacing: 0) {
             HStack {
@@ -61,11 +63,14 @@ struct MyHeaderView: View {
             .padding()
             .frame(width: UIScreen.SCREEN_W, height: 44)
             .background(Color.blue)
-            .padding(.top, 50)
+            .padding(.top, safeAreaInsets.top)
             
             Spacer()
         }
         .edgesIgnoringSafeArea(.top)
+        .onSafeAreaInsets { insets in
+            self.safeAreaInsets = insets
+        }
     }
 }
 
