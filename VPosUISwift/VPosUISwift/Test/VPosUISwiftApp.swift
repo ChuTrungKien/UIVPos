@@ -12,7 +12,7 @@ import SwiftUI
 struct VPosUISwiftApp: App {
     var body: some Scene {
         WindowGroup {
-            DangNhapVPosVC()
+            SkyFloating()
         }
     }
 }

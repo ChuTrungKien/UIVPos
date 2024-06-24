@@ -19,6 +19,7 @@
 		E0E0DCF92BC39AF500A3623A /* VPosUISwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E0DCF82BC39AF500A3623A /* VPosUISwiftUITestsLaunchTests.swift */; };
 		E0E0DD062BC39FCD00A3623A /* BackgroundVPos.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E0DD052BC39FCD00A3623A /* BackgroundVPos.swift */; };
 		EC657BBA2BCEEAFD0094404F /* DangNhapVPosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC657BB92BCEEAFD0094404F /* DangNhapVPosVC.swift */; };
+		EC87B5602C29C4D400CA1626 /* SkyFloatingText.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC87B55F2C29C4D400CA1626 /* SkyFloatingText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		E0E0DCF82BC39AF500A3623A /* VPosUISwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPosUISwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E0E0DD052BC39FCD00A3623A /* BackgroundVPos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundVPos.swift; sourceTree = "<group>"; };
 		EC657BB92BCEEAFD0094404F /* DangNhapVPosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DangNhapVPosVC.swift; sourceTree = "<group>"; };
+		EC87B55F2C29C4D400CA1626 /* SkyFloatingText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyFloatingText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				E0E0DCDD2BC39AF400A3623A /* ContentView.swift */,
 				EC657BB92BCEEAFD0094404F /* DangNhapVPosVC.swift */,
 				E0E0DD052BC39FCD00A3623A /* BackgroundVPos.swift */,
+				EC87B55F2C29C4D400CA1626 /* SkyFloatingText.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC87B5602C29C4D400CA1626 /* SkyFloatingText.swift in Sources */,
 				E01E0E7B2C241C2D00E45DF4 /* CellChonAnhSP.swift in Sources */,
 				E01E0E782C241A4700E45DF4 /* ManTaoSanPham.swift in Sources */,
 				E0E0DCDE2BC39AF400A3623A /* ContentView.swift in Sources */,
