@@ -8,12 +8,42 @@
 import Foundation
 import SwiftUI
 
-struct SkyFloating: View {
+struct CheckContentView: View {
     @State private var text: String = ""
-    
+    @State private var text2: String = ""
+    var body: some View {
+        VStack(spacing: 15) {
+            Spacer()
+            Spacer()
+            VStack {
+                SkyFloating(placholder: "First Name", text: $text)
+                SkyFloating(placholder: "Last Name", text: $text2)
+            }
+            Spacer()
+            VStack {
+                SkyFloating(placholder: "First Name", text: $text)
+                SkyFloating(placholder: "Last Name", text: $text2)
+            }
+            Spacer()
+            Spacer()
+        }
+        .padding()
+        .onTapGesture {
+            self.hiddenKeyboard()
+        }
+    }
+}
+
+#Preview {
+    CheckContentView()
+}
+
+struct SkyFloating: View {
+    let placholder: String
+    @Binding var text: String
     var body: some View {
         ZStack(alignment: .leading) {
-            Text("First Name")
+            Text(placholder)
                 .foregroundColor(.blue.opacity(0.5))
                 .offset(y: self.text.isEmpty ? 0 : -25)
                 .scaleEffect(self.text.isEmpty ? 1: 0.9, anchor: .leading)
@@ -29,10 +59,18 @@ struct SkyFloating: View {
                 .stroke(text.isEmpty ? .blue.opacity(0.5) : .blue, lineWidth: 2)
         )
         .cornerRadius(10)
-        .padding()
+        .frame(height: 70)
     }
 }
 
-#Preview {
-    SkyFloating()
+// custom textfield ke thua tu TextField Modifier:
+struct CustomTextFieldtyle: TextFieldStyle {
+    let placeholder: String
+    let placeholderColor: Color
+    let placeholderBgColor: Color
+    
+    var isEditing: Bool
+    
+    func _body(configuration: TextField<_Label>) -> some View {
+    }
 }

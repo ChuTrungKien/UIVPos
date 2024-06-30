@@ -24,4 +24,8 @@ extension View {
     func onSafeAreaInsets(perfom action: @escaping (EdgeInsets) -> Void) -> some View {
         self.modifier(SafeAreaInsetsModifier(action: action))
     }
+    
+    func hiddenKeyboard() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
 }
