@@ -13,6 +13,7 @@ struct VPosUISwiftApp: App {
     var body: some Scene {
         WindowGroup {
             CheckContentView()
+                .background(.white)
         }
     }
 }

@@ -11,6 +11,8 @@ import SwiftUI
 struct CheckContentView: View {
     @State private var text: String = ""
     @State private var text2: String = ""
+    @State private var text3: String = ""
+    @State private var text4: String = ""
     var body: some View {
         VStack(spacing: 15) {
             Spacer()
@@ -21,8 +23,11 @@ struct CheckContentView: View {
             }
             Spacer()
             VStack {
-                SkyFloating(placholder: "First Name", text: $text)
-                SkyFloating(placholder: "Last Name", text: $text2)
+                TextField("", text: $text3)
+                    .textFieldStyle(CustomTextFieldtyle(placeholder: "Address", placeholderColor: .blue, placeholderBgColor: .white, isEditing: !self.text3.isEmpty))
+                    .padding(.vertical, 10)
+                TextField("", text: $text4)
+                    .textFieldStyle(CustomTextFieldtyle(placeholder: "Email", placeholderColor: .blue, placeholderBgColor: .white, isEditing: !self.text4.isEmpty))
             }
             Spacer()
             Spacer()
@@ -72,5 +77,25 @@ struct CustomTextFieldtyle: TextFieldStyle {
     var isEditing: Bool
     
     func _body(configuration: TextField<_Label>) -> some View {
+        ZStack(alignment: .leading) {
+            Text(placeholder)
+                .font(.system(self.isEditing ? .title3 : .title2, design: .rounded))
+                .foregroundColor(placeholderColor.opacity(0.5))
+                .padding(.horizontal, self.isEditing ? 10 : 0)
+                .background(placeholderBgColor)
+                .offset(y: self.isEditing ? -28 : 0)
+                .scaleEffect(self.isEditing ? 0.9 : 1, anchor: .leading)
+            
+            configuration
+                .font(.system(.title2, design: .rounded))
+                .foregroundColor(placeholderColor)
+        }
+        .animation(.easeOut, value: 10)
+        .padding(.horizontal)
+        .padding(.vertical, 10)
+        .background(
+            RoundedRectangle(cornerRadius: 10)
+                .stroke(self.isEditing ? placeholderColor.opacity(0.5) : placeholderColor, lineWidth: 2)
+        )
     }
 }
