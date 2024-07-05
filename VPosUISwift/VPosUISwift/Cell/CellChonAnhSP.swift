@@ -19,50 +19,6 @@ struct CellChonAnhSP: View {
     }
 }
 
-struct CellCustomTextView: View {
-    @State private var title: String = "Hello"
-    @State private var subTitle: String = "This is Text View"
-    
-    var body: some View {
-        VStack {
-            Text("Title")
-                .frame(width: 50, alignment: .leading)
-                .padding(.horizontal)
-                .background(.gray)
-        }
-        HStack {
-            Text(title)
-                .font(.headline)
-                .padding()
-            Spacer()
-        }
-        .frame(height: 50) // Adjust height as needed
-        .background(RoundedRectangle(cornerRadius: 10).stroke(Color.gray, lineWidth: 1))
-        .padding(.horizontal)
-    }
-}
-
-struct CellHeaderSP: View {
-    @State private var title: String = ""
-    @State private var addVal: Bool = false
-    
-    var body: some View {
-        VStack(alignment: .center) {
-            HStack {
-                Text(title)
-                    .font(.title3)
-                    .padding()
-                Button(action: {
-                    //action here:
-                }
-                , label: {
-                    Image("...")
-                })
-            }
-        }
-    }
-}
-
 #Preview{
-    CellCustomTextView()
+    CellChonAnhSP()
 }

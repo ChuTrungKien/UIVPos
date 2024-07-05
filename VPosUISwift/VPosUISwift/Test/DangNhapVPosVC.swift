@@ -12,11 +12,8 @@ struct DangNhapVPosVC: View {
     var body: some View {
         ZStack {
             MyHeaderView()
-            VStack {
-                Text("").frame(width: UIScreen.SCREEN_W, height: 28)
-                    .background(Color.clear)
-                MyListView()
-            }
+            MyListView()
+                .padding(.top, 44)
         }
     }
 }
@@ -66,10 +63,6 @@ struct MyHeaderView: View {
             .padding(.top, safeAreaInsets.top)
             
             Spacer()
-        }
-        .edgesIgnoringSafeArea(.top)
-        .onSafeAreaInsets { insets in
-            self.safeAreaInsets = insets
         }
     }
 }
