@@ -10,7 +10,7 @@
 		E01E0E752C23DB4A00E45DF4 /* ExtentFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01E0E742C23DB4A00E45DF4 /* ExtentFile.swift */; };
 		E01E0E782C241A4700E45DF4 /* ManTaoSanPham.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01E0E772C241A4700E45DF4 /* ManTaoSanPham.swift */; };
 		E01E0E7B2C241C2D00E45DF4 /* CellChonAnhSP.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01E0E7A2C241C2D00E45DF4 /* CellChonAnhSP.swift */; };
-		E0BBD3522C37A0F300E46B7F /* TestScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BBD3512C37A0F300E46B7F /* TestScrollView.swift */; };
+		E08EE8CD2C467B7B002BF44B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08EE8CC2C467B7B002BF44B /* BaseViewController.swift */; };
 		E0E0DCDC2BC39AF400A3623A /* VPosUISwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E0DCDB2BC39AF400A3623A /* VPosUISwiftApp.swift */; };
 		E0E0DCDE2BC39AF400A3623A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E0DCDD2BC39AF400A3623A /* ContentView.swift */; };
 		E0E0DCE02BC39AF500A3623A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0E0DCDF2BC39AF500A3623A /* Assets.xcassets */; };
@@ -44,7 +44,7 @@
 		E01E0E742C23DB4A00E45DF4 /* ExtentFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtentFile.swift; sourceTree = "<group>"; };
 		E01E0E772C241A4700E45DF4 /* ManTaoSanPham.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManTaoSanPham.swift; sourceTree = "<group>"; };
 		E01E0E7A2C241C2D00E45DF4 /* CellChonAnhSP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellChonAnhSP.swift; sourceTree = "<group>"; };
-		E0BBD3512C37A0F300E46B7F /* TestScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScrollView.swift; sourceTree = "<group>"; };
+		E08EE8CC2C467B7B002BF44B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E0E0DCD82BC39AF400A3623A /* VPosUISwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VPosUISwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0E0DCDB2BC39AF400A3623A /* VPosUISwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPosUISwiftApp.swift; sourceTree = "<group>"; };
 		E0E0DCDD2BC39AF400A3623A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -93,7 +93,7 @@
 				EC657BB92BCEEAFD0094404F /* DangNhapVPosVC.swift */,
 				E0E0DD052BC39FCD00A3623A /* BackgroundVPos.swift */,
 				EC87B55F2C29C4D400CA1626 /* SkyFloatingText.swift */,
-				E0BBD3512C37A0F300E46B7F /* TestScrollView.swift */,
+				E08EE8CC2C467B7B002BF44B /* BaseViewController.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -296,10 +296,10 @@
 			files = (
 				EC87B5602C29C4D400CA1626 /* SkyFloatingText.swift in Sources */,
 				E01E0E7B2C241C2D00E45DF4 /* CellChonAnhSP.swift in Sources */,
-				E0BBD3522C37A0F300E46B7F /* TestScrollView.swift in Sources */,
 				E01E0E782C241A4700E45DF4 /* ManTaoSanPham.swift in Sources */,
 				E0E0DCDE2BC39AF400A3623A /* ContentView.swift in Sources */,
 				EC657BBA2BCEEAFD0094404F /* DangNhapVPosVC.swift in Sources */,
+				E08EE8CD2C467B7B002BF44B /* BaseViewController.swift in Sources */,
 				E0E0DCDC2BC39AF400A3623A /* VPosUISwiftApp.swift in Sources */,
 				E0E0DD062BC39FCD00A3623A /* BackgroundVPos.swift in Sources */,
 				E01E0E752C23DB4A00E45DF4 /* ExtentFile.swift in Sources */,
