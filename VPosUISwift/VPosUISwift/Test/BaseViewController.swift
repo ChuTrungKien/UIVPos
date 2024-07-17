@@ -18,8 +18,12 @@ struct BaseViewController<Content: View>: View {
          leadingItem: AnyView?  = AnyView(Button(action: {
         
     }) {
-        Text("Back")
+        HStack {
+        Image(systemName: "chevron.backward")
             .foregroundColor(.blue)
+        Text("Back")
+            .foregroundStyle(.blue)
+    }
     }),
          trailingItem: AnyView?,
          @ViewBuilder content: () -> Content) {
@@ -52,7 +56,8 @@ struct ViewControllerA: View {
                             }
                            )) {
                                List {
-                                   Text("First row")
+                                   Image(systemName: "cloud.sun.fill")
+                                       .symbolRenderingMode(.multicolor)
                                    Text("First row")
                                    Text("First row")
                                    Text("First row")
