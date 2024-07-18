@@ -9,8 +9,9 @@ import Foundation
 import SwiftUI
 
 struct CircleImage: View {
+    var landMark: ObjLandMark
     var body: some View {
-        Image("turtlerock")
+        landMark.image
             .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
             .overlay{Circle().stroke(.white, lineWidth: 4)}
             .shadow(radius: 7)
@@ -18,5 +19,5 @@ struct CircleImage: View {
 }
 
 #Preview {
-    CircleImage()
+    CircleImage(landMark: landMarks[0])
 }
