@@ -15,13 +15,17 @@ struct LandMarkDetail: View {
             MapView()
                 .frame(height: 300)
             
-            CircleImage(landMark: landMarks[0])
+            CircleImage(landMark: landMark)
                 .offset(y: -130)
                 .padding(.bottom, -130)
             
             VStack(alignment: .leading) {
-                Text(landMark.name)
-                    .font(.title)
+                HStack {
+                    Text(landMark.name)
+                        .font(.title)
+                    FavoriteButton(isSet: landMark.isFavorite)
+                }
+                
                 HStack {
                     Text(landMark.park)
                     Spacer()

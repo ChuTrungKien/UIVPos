@@ -19,6 +19,10 @@ struct LandMarkRow: View {
                 .overlay{Circle().stroke(.blue, lineWidth: 1)}
             Text(landMark.name)
             Spacer()
+            if landMark.isFavorite {
+                Image(systemName: "star.fill")
+                    .foregroundColor(.yellow)
+            }
         }
     }
 }
