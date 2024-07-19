@@ -14,6 +14,7 @@
 		E0270A112C47D7A800083AE5 /* LandMarkMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0270A102C47D7A800083AE5 /* LandMarkMainVC.swift */; };
 		E0270A142C47D9EA00083AE5 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0270A132C47D9EA00083AE5 /* CircleImage.swift */; };
 		E0270A162C47DAFF00083AE5 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0270A152C47DAFF00083AE5 /* MapView.swift */; };
+		E0795D772C4A6369001A536A /* MyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0795D762C4A6369001A536A /* MyApp.swift */; };
 		E08EE8CD2C467B7B002BF44B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08EE8CC2C467B7B002BF44B /* BaseViewController.swift */; };
 		E0B3C0BB2C48B1E900D12CA1 /* ObjLandMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B3C0BA2C48B1E900D12CA1 /* ObjLandMark.swift */; };
 		E0B3C0BD2C48B34700D12CA1 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B3C0BC2C48B34700D12CA1 /* ModelData.swift */; };
@@ -58,6 +59,7 @@
 		E0270A102C47D7A800083AE5 /* LandMarkMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandMarkMainVC.swift; sourceTree = "<group>"; };
 		E0270A132C47D9EA00083AE5 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		E0270A152C47DAFF00083AE5 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		E0795D762C4A6369001A536A /* MyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApp.swift; sourceTree = "<group>"; };
 		E08EE8CC2C467B7B002BF44B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E0B3C0BA2C48B1E900D12CA1 /* ObjLandMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjLandMark.swift; sourceTree = "<group>"; };
 		E0B3C0BC2C48B34700D12CA1 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
@@ -154,6 +156,14 @@
 			path = item;
 			sourceTree = "<group>";
 		};
+		E0795D752C4A6342001A536A /* Practice */ = {
+			isa = PBXGroup;
+			children = (
+				E0795D762C4A6369001A536A /* MyApp.swift */,
+			);
+			path = Practice;
+			sourceTree = "<group>";
+		};
 		E0B3C0B92C48B1D600D12CA1 /* model */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +208,7 @@
 		E0E0DCDA2BC39AF400A3623A /* VPosUISwift */ = {
 			isa = PBXGroup;
 			children = (
+				E0795D752C4A6342001A536A /* Practice */,
 				E0270A0C2C47D63D00083AE5 /* ThucHanh1 */,
 				E01E0E792C241C1100E45DF4 /* Cell */,
 				E01E0E762C241A0B00E45DF4 /* Test */,
@@ -373,6 +384,7 @@
 				E01E0E782C241A4700E45DF4 /* ManTaoSanPham.swift in Sources */,
 				E0E0DCDE2BC39AF400A3623A /* ContentView.swift in Sources */,
 				EC657BBA2BCEEAFD0094404F /* DangNhapVPosVC.swift in Sources */,
+				E0795D772C4A6369001A536A /* MyApp.swift in Sources */,
 				E08EE8CD2C467B7B002BF44B /* BaseViewController.swift in Sources */,
 				E0B3C0BB2C48B1E900D12CA1 /* ObjLandMark.swift in Sources */,
 				E0E0DCDC2BC39AF400A3623A /* VPosUISwiftApp.swift in Sources */,
