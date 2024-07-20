@@ -24,10 +24,10 @@ struct CheckContentView: View {
             Spacer()
             VStack {
                 TextField("", text: $text3)
-                    .textFieldStyle(CustomTextFieldtyle(placeholder: "Address", placeholderColor: .blue, placeholderBgColor: .white, isEditing: !self.text3.isEmpty))
-                    .padding(.vertical, 10)
+                    .textFieldStyle(CustomTextFieldStyle(placeholder: "Address", placeholderColor: .blue, placeholderBgColor: .white, isEditing: !self.text3.isEmpty))
+                    .padding(.vertical, 20)
                 TextField("", text: $text4)
-                    .textFieldStyle(CustomTextFieldtyle(placeholder: "Email", placeholderColor: .blue, placeholderBgColor: .white, isEditing: !self.text4.isEmpty))
+                    .textFieldStyle(CustomTextFieldStyle(placeholder: "Email", placeholderColor: .blue, placeholderBgColor: .white, isEditing: !self.text4.isEmpty))
             }
             Spacer()
             Spacer()
@@ -69,7 +69,7 @@ struct SkyFloating: View {
 }
 
 // custom textfield ke thua tu TextField Modifier:
-struct CustomTextFieldtyle: TextFieldStyle {
+struct CustomTextFieldStyle: TextFieldStyle {
     let placeholder: String
     let placeholderColor: Color
     let placeholderBgColor: Color
@@ -83,19 +83,20 @@ struct CustomTextFieldtyle: TextFieldStyle {
                 .foregroundColor(placeholderColor.opacity(0.5))
                 .padding(.horizontal, self.isEditing ? 10 : 0)
                 .background(placeholderBgColor)
-                .offset(y: self.isEditing ? -28 : 0)
+                .offset(y: self.isEditing ? -34 : 0)
                 .scaleEffect(self.isEditing ? 0.9 : 1, anchor: .leading)
             
             configuration
                 .font(.system(.title2, design: .rounded))
                 .foregroundColor(placeholderColor)
         }
+        .frame(height: 40)
         .animation(.easeOut, value: 10)
         .padding(.horizontal)
         .padding(.vertical, 10)
         .background(
             RoundedRectangle(cornerRadius: 10)
-                .stroke(self.isEditing ? placeholderColor.opacity(0.5) : placeholderColor, lineWidth: 2)
+                .stroke(self.isEditing ? placeholderColor : placeholderColor.opacity(0.5), lineWidth: 1)
         )
     }
 }
