@@ -25,6 +25,9 @@ struct MyApp: View {
 struct TextAndSymbol: View {
     @State private var name: String = ""
     @State private var nameOnChangeTextField: String = ""
+    @State private var beginText: Bool = false
+    @State private var changeText: String = ""
+    @State private var endEditText: String = ""
     
     var body: some View {
         ScrollView{
@@ -78,16 +81,42 @@ struct TextAndSymbol: View {
             //bat su kien khi TextField co su thay doi:
             VStack{
                 Text("Bắt sự kiện thay đổi của TextField")
-                TextField("", text: $name)
+                    .padding(.bottom, 16)
+                TextField("", text: $nameOnChangeTextField) {isBegin in
+                    if isBegin {
+                        self.beginText = true
+                    } else {
+                        self.endEditText = nameOnChangeTextField
+                    }
+                } onCommit: {
+                    print("aaa")
+                }
                     .textFieldStyle(
                         CustomTextFieldStyle(placeholder: "InputText",
                                                          placeholderColor: .blue,
                                                          placeholderBgColor: .white,
                                                          isEditing: !self.nameOnChangeTextField.isEmpty))
                 Spacer()
+                HStack{
+                    Text("Begin edt:")
+                    Spacer()
+                    Text(self.beginText ? "Bat dau" : "...")
+                }
+                Spacer()
+                HStack{
+                    Text("Changed edt:")
+                    Spacer()
+                    Text(nameOnChangeTextField)
+                }
+                Spacer()
+                HStack{
+                    Text("DidEnd edt:")
+                    Spacer()
+                    Text(endEditText)
+                }
                 
             }
-            .frame(height: 150)
+            .frame(height: 300)
             .padding()
         }
     }
