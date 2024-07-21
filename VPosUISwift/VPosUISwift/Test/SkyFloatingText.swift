@@ -67,36 +67,3 @@ struct SkyFloating: View {
         .frame(height: 70)
     }
 }
-
-// custom textfield ke thua tu TextField Modifier:
-struct CustomTextFieldStyle: TextFieldStyle {
-    let placeholder: String
-    let placeholderColor: Color
-    let placeholderBgColor: Color
-    
-    var isEditing: Bool
-    
-    func _body(configuration: TextField<_Label>) -> some View {
-        ZStack(alignment: .leading) {
-            Text(placeholder)
-                .font(.system(self.isEditing ? .title3 : .title2, design: .rounded))
-                .foregroundColor(placeholderColor.opacity(0.5))
-                .padding(.horizontal, self.isEditing ? 10 : 0)
-                .background(placeholderBgColor)
-                .offset(y: self.isEditing ? -34 : 0)
-                .scaleEffect(self.isEditing ? 0.9 : 1, anchor: .leading)
-            
-            configuration
-                .font(.system(.title2, design: .rounded))
-                .foregroundColor(placeholderColor)
-        }
-        .frame(height: 40)
-        .animation(.easeOut, value: 10)
-        .padding(.horizontal)
-        .padding(.vertical, 10)
-        .background(
-            RoundedRectangle(cornerRadius: 10)
-                .stroke(self.isEditing ? placeholderColor : placeholderColor.opacity(0.5), lineWidth: 1)
-        )
-    }
-}

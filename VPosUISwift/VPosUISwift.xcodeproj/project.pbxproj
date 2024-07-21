@@ -29,6 +29,10 @@
 		E0E0DCF72BC39AF500A3623A /* VPosUISwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E0DCF62BC39AF500A3623A /* VPosUISwiftUITests.swift */; };
 		E0E0DCF92BC39AF500A3623A /* VPosUISwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E0DCF82BC39AF500A3623A /* VPosUISwiftUITestsLaunchTests.swift */; };
 		E0E0DD062BC39FCD00A3623A /* BackgroundVPos.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E0DD052BC39FCD00A3623A /* BackgroundVPos.swift */; };
+		EC1F18B82C4C0DEA0061F4C8 /* DemoLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1F18B72C4C0DEA0061F4C8 /* DemoLogin.swift */; };
+		EC1F18BB2C4C25B30061F4C8 /* CustomViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1F18BA2C4C25B30061F4C8 /* CustomViewModifier.swift */; };
+		EC1F18BD2C4C27550061F4C8 /* ExtensionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1F18BC2C4C27550061F4C8 /* ExtensionView.swift */; };
+		EC1F18C02C4CCD8D0061F4C8 /* DemoLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1F18BF2C4CCD8D0061F4C8 /* DemoLoginViewModel.swift */; };
 		EC657BBA2BCEEAFD0094404F /* DangNhapVPosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC657BB92BCEEAFD0094404F /* DangNhapVPosVC.swift */; };
 		EC87B5602C29C4D400CA1626 /* SkyFloatingText.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC87B55F2C29C4D400CA1626 /* SkyFloatingText.swift */; };
 		EC9413342C494B9C00ED860C /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9413332C494B9C00ED860C /* FavoriteButton.swift */; };
@@ -77,6 +81,10 @@
 		E0E0DCF62BC39AF500A3623A /* VPosUISwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPosUISwiftUITests.swift; sourceTree = "<group>"; };
 		E0E0DCF82BC39AF500A3623A /* VPosUISwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPosUISwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E0E0DD052BC39FCD00A3623A /* BackgroundVPos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundVPos.swift; sourceTree = "<group>"; };
+		EC1F18B72C4C0DEA0061F4C8 /* DemoLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoLogin.swift; sourceTree = "<group>"; };
+		EC1F18BA2C4C25B30061F4C8 /* CustomViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewModifier.swift; sourceTree = "<group>"; };
+		EC1F18BC2C4C27550061F4C8 /* ExtensionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionView.swift; sourceTree = "<group>"; };
+		EC1F18BF2C4CCD8D0061F4C8 /* DemoLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoLoginViewModel.swift; sourceTree = "<group>"; };
 		EC657BB92BCEEAFD0094404F /* DangNhapVPosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DangNhapVPosVC.swift; sourceTree = "<group>"; };
 		EC87B55F2C29C4D400CA1626 /* SkyFloatingText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyFloatingText.swift; sourceTree = "<group>"; };
 		EC9413332C494B9C00ED860C /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
@@ -110,7 +118,6 @@
 		E01E0E762C241A0B00E45DF4 /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				E0E0DCDB2BC39AF400A3623A /* VPosUISwiftApp.swift */,
 				E0E0DCDD2BC39AF400A3623A /* ContentView.swift */,
 				EC657BB92BCEEAFD0094404F /* DangNhapVPosVC.swift */,
 				E0E0DD052BC39FCD00A3623A /* BackgroundVPos.swift */,
@@ -159,7 +166,9 @@
 		E0795D752C4A6342001A536A /* Practice */ = {
 			isa = PBXGroup;
 			children = (
+				EC1F18BE2C4CCD750061F4C8 /* viewModel */,
 				E0795D762C4A6369001A536A /* MyApp.swift */,
+				EC1F18B72C4C0DEA0061F4C8 /* DemoLogin.swift */,
 			);
 			path = Practice;
 			sourceTree = "<group>";
@@ -208,10 +217,12 @@
 		E0E0DCDA2BC39AF400A3623A /* VPosUISwift */ = {
 			isa = PBXGroup;
 			children = (
+				EC1F18B92C4C257A0061F4C8 /* CustomView */,
 				E0795D752C4A6342001A536A /* Practice */,
 				E0270A0C2C47D63D00083AE5 /* ThucHanh1 */,
 				E01E0E792C241C1100E45DF4 /* Cell */,
 				E01E0E762C241A0B00E45DF4 /* Test */,
+				E0E0DCDB2BC39AF400A3623A /* VPosUISwiftApp.swift */,
 				E0E0DCDF2BC39AF500A3623A /* Assets.xcassets */,
 				E0E0DCE12BC39AF500A3623A /* Preview Content */,
 				E01E0E742C23DB4A00E45DF4 /* ExtentFile.swift */,
@@ -243,6 +254,23 @@
 				E0E0DCF82BC39AF500A3623A /* VPosUISwiftUITestsLaunchTests.swift */,
 			);
 			path = VPosUISwiftUITests;
+			sourceTree = "<group>";
+		};
+		EC1F18B92C4C257A0061F4C8 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				EC1F18BA2C4C25B30061F4C8 /* CustomViewModifier.swift */,
+				EC1F18BC2C4C27550061F4C8 /* ExtensionView.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		EC1F18BE2C4CCD750061F4C8 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EC1F18BF2C4CCD8D0061F4C8 /* DemoLoginViewModel.swift */,
+			);
+			path = viewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,15 +411,19 @@
 				E0B3C0C32C48CC9B00D12CA1 /* LandMarkList.swift in Sources */,
 				E01E0E782C241A4700E45DF4 /* ManTaoSanPham.swift in Sources */,
 				E0E0DCDE2BC39AF400A3623A /* ContentView.swift in Sources */,
+				EC1F18C02C4CCD8D0061F4C8 /* DemoLoginViewModel.swift in Sources */,
 				EC657BBA2BCEEAFD0094404F /* DangNhapVPosVC.swift in Sources */,
+				EC1F18BB2C4C25B30061F4C8 /* CustomViewModifier.swift in Sources */,
 				E0795D772C4A6369001A536A /* MyApp.swift in Sources */,
 				E08EE8CD2C467B7B002BF44B /* BaseViewController.swift in Sources */,
 				E0B3C0BB2C48B1E900D12CA1 /* ObjLandMark.swift in Sources */,
 				E0E0DCDC2BC39AF400A3623A /* VPosUISwiftApp.swift in Sources */,
+				EC1F18B82C4C0DEA0061F4C8 /* DemoLogin.swift in Sources */,
 				E0B3C0C12C48B61F00D12CA1 /* LandMarkRow.swift in Sources */,
 				E0E0DD062BC39FCD00A3623A /* BackgroundVPos.swift in Sources */,
 				E0270A142C47D9EA00083AE5 /* CircleImage.swift in Sources */,
 				E01E0E752C23DB4A00E45DF4 /* ExtentFile.swift in Sources */,
+				EC1F18BD2C4C27550061F4C8 /* ExtensionView.swift in Sources */,
 				E0270A112C47D7A800083AE5 /* LandMarkMainVC.swift in Sources */,
 				E0B3C0BD2C48B34700D12CA1 /* ModelData.swift in Sources */,
 				E0B3C0C52C48D18C00D12CA1 /* LandMarkDetail.swift in Sources */,

@@ -114,7 +114,7 @@ struct TextAndSymbol: View {
                     Spacer()
                     Text(endEditText)
                 }
-                
+                Spacer()
             }
             .frame(height: 300)
             .padding()
