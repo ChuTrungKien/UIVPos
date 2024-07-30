@@ -14,6 +14,9 @@
 		E0270A112C47D7A800083AE5 /* LandMarkMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0270A102C47D7A800083AE5 /* LandMarkMainVC.swift */; };
 		E0270A142C47D9EA00083AE5 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0270A132C47D9EA00083AE5 /* CircleImage.swift */; };
 		E0270A162C47DAFF00083AE5 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0270A152C47DAFF00083AE5 /* MapView.swift */; };
+		E02C46D22C5881410029B5BB /* FetchDataList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02C46D12C5881410029B5BB /* FetchDataList.swift */; };
+		E02C46D72C5885B10029B5BB /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02C46D62C5885B10029B5BB /* Song.swift */; };
+		E02C46D92C5888310029B5BB /* SongListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02C46D82C5888310029B5BB /* SongListViewModel.swift */; };
 		E0795D772C4A6369001A536A /* MyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0795D762C4A6369001A536A /* MyApp.swift */; };
 		E08EE8CD2C467B7B002BF44B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08EE8CC2C467B7B002BF44B /* BaseViewController.swift */; };
 		E0B3C0BB2C48B1E900D12CA1 /* ObjLandMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B3C0BA2C48B1E900D12CA1 /* ObjLandMark.swift */; };
@@ -63,6 +66,9 @@
 		E0270A102C47D7A800083AE5 /* LandMarkMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandMarkMainVC.swift; sourceTree = "<group>"; };
 		E0270A132C47D9EA00083AE5 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		E0270A152C47DAFF00083AE5 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		E02C46D12C5881410029B5BB /* FetchDataList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchDataList.swift; sourceTree = "<group>"; };
+		E02C46D62C5885B10029B5BB /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		E02C46D82C5888310029B5BB /* SongListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListViewModel.swift; sourceTree = "<group>"; };
 		E0795D762C4A6369001A536A /* MyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApp.swift; sourceTree = "<group>"; };
 		E08EE8CC2C467B7B002BF44B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E0B3C0BA2C48B1E900D12CA1 /* ObjLandMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjLandMark.swift; sourceTree = "<group>"; };
@@ -163,6 +169,40 @@
 			path = item;
 			sourceTree = "<group>";
 		};
+		E02C46D02C57AA000029B5BB /* ListHow */ = {
+			isa = PBXGroup;
+			children = (
+				E02C46D52C58857B0029B5BB /* model */,
+				E02C46D42C58818C0029B5BB /* viewmodel */,
+				E02C46D32C58817E0029B5BB /* connectAPI */,
+				E02C46D12C5881410029B5BB /* FetchDataList.swift */,
+			);
+			path = ListHow;
+			sourceTree = "<group>";
+		};
+		E02C46D32C58817E0029B5BB /* connectAPI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = connectAPI;
+			sourceTree = "<group>";
+		};
+		E02C46D42C58818C0029B5BB /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				E02C46D82C5888310029B5BB /* SongListViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		E02C46D52C58857B0029B5BB /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E02C46D62C5885B10029B5BB /* Song.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		E0795D752C4A6342001A536A /* Practice */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +257,7 @@
 		E0E0DCDA2BC39AF400A3623A /* VPosUISwift */ = {
 			isa = PBXGroup;
 			children = (
+				E02C46D02C57AA000029B5BB /* ListHow */,
 				EC1F18B92C4C257A0061F4C8 /* CustomView */,
 				E0795D752C4A6342001A536A /* Practice */,
 				E0270A0C2C47D63D00083AE5 /* ThucHanh1 */,
@@ -410,6 +451,7 @@
 				EC9413342C494B9C00ED860C /* FavoriteButton.swift in Sources */,
 				E0B3C0C32C48CC9B00D12CA1 /* LandMarkList.swift in Sources */,
 				E01E0E782C241A4700E45DF4 /* ManTaoSanPham.swift in Sources */,
+				E02C46D22C5881410029B5BB /* FetchDataList.swift in Sources */,
 				E0E0DCDE2BC39AF400A3623A /* ContentView.swift in Sources */,
 				EC1F18C02C4CCD8D0061F4C8 /* DemoLoginViewModel.swift in Sources */,
 				EC657BBA2BCEEAFD0094404F /* DangNhapVPosVC.swift in Sources */,
@@ -422,7 +464,9 @@
 				E0B3C0C12C48B61F00D12CA1 /* LandMarkRow.swift in Sources */,
 				E0E0DD062BC39FCD00A3623A /* BackgroundVPos.swift in Sources */,
 				E0270A142C47D9EA00083AE5 /* CircleImage.swift in Sources */,
+				E02C46D72C5885B10029B5BB /* Song.swift in Sources */,
 				E01E0E752C23DB4A00E45DF4 /* ExtentFile.swift in Sources */,
+				E02C46D92C5888310029B5BB /* SongListViewModel.swift in Sources */,
 				EC1F18BD2C4C27550061F4C8 /* ExtensionView.swift in Sources */,
 				E0270A112C47D7A800083AE5 /* LandMarkMainVC.swift in Sources */,
 				E0B3C0BD2C48B34700D12CA1 /* ModelData.swift in Sources */,
